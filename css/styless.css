@@ -169,12 +169,16 @@
     margin: 0 10px;
     display: inline-block;
   }
+  .redessociales img{
+    height: 40px;
+
+  }
   
   /* Estilos para la lista pequeña */
   .lista-pequena {
     list-style: none;
     color: white;
-    padding: 5px;
+    padding: 0px;
     margin: 0;
     text-align: center;
   }
@@ -213,6 +217,13 @@
     color: blue;
   }
   
+  .mapa{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh; /* Ajusta la altura al 100% del viewport */
+    padding: 10px; /* Añade espacio alrededor del mapa (opcional) */
+  }
   /*PRESENTACION*/
   
   .imagenespresentacion {
