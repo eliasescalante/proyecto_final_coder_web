@@ -283,3 +283,8 @@
     background-color: #0056b3;
     border-color: #0056b3;
   }
+  .boton-enviar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
