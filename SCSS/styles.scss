@@ -1,0 +1,242 @@
+// variable para el color de la fuente
+$color-fuente: black;
+
+//mixin para evitar tipiar mas codigo de mas con el tamaño
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// Estilos para el logo
+.logo {
+    @include sizes(60px, 60px);
+}
+
+// Estilos globales de reinicio
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// Estilos generales del cuerpo del documento
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    color: $color-fuente; // Usar variable de color de fuente
+}
+
+h2 {
+    text-align: center;
+    margin: 70;
+    padding: 10;
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+}
+
+main img {
+    @include sizes(50%, 740px);
+}
+
+
+h1 {
+    margin: 70px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+
+
+// Estilos para la barra de navegación
+.navbar .container-fluid {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); // Negro con un 50% de opacidad
+    box-shadow: 15px 15px 35px rgba(109, 6, 6, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+// Estilos para el botón de alternancia (para dispositivos móviles)
+.navbar-toggler {
+    border: none;
+}
+
+// Estilos para el contenedor fluido que envuelve el contenido de la barra de navegación
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Estilos para la lista de enlaces en la barra de navegación
+    .navbar-nav {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+
+        // Estilos para cada elemento de la lista de enlaces
+        .nav-item {
+            margin-right: 70px;
+
+            // Estilos para cada enlace dentro de la lista
+            .nav-link {
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+                transition: color 0.3s; // Agrega una transición suave al cambio de color
+
+                &:hover {
+                    color: #525ceb;
+                }
+            }
+        }
+    }
+}
+
+
+
+// estilo para la lista de eventos en index
+.lista2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+// estilo para el contenedor de imagenes
+.contenedorimagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.imagenesexclusivas {
+    display: flex;
+    flex-wrap: wrap;
+    @include sizes(1650px, 60vmin);
+    gap: 5px;
+
+    img {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        flex: 1;
+        object-fit: cover;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s;
+        border-radius: 15px;
+
+        &:hover {
+            flex: 2;
+        }
+    }
+}
+
+.parrafo-inicial {
+    font-size: 20px;
+}
+
+.containersecciones {
+    p {
+        // Estilos específicos para las etiquetas p dentro de .containersecciones
+        font-size: 30px;
+        color: #333; // Por ejemplo, color de texto negro
+        margin-bottom: 10px; // Por ejemplo, agregar un margen inferior
+    }
+    h2 {
+        color: red;
+    }
+    img {
+        padding: 10px;
+    }
+    .mapa {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+// Footer
+// Estilos para la sección de pie de página
+.piedepagina {
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+  // Estilos para la sección de información sobre redes sociales
+.informacion {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+  // Estilos para la sección de redes sociales y lista pequeña
+.redessociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Estilos para cada icono de red social
+    a {
+        margin:  10px;
+        display: inline-block;
+    }
+
+    img {
+        height: 40px;
+    }
+}
+
+  // Estilos para la lista pequeña
+.lista-pequena {
+    list-style: none;
+    color: white;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    // Estilos para cada ítem de la lista pequeña
+    li {
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+
+/* SCSS STAFF */
+
+/* Estilo para el contenedor de las tarjetas */
+.contenedortarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilo para cada tarjeta */
+  .card {
+    width: 18rem;
+    margin: 45px;
+    img {
+        @include sizes(286px,200px);
+    }
+    text-align: center;
+    transition: opacity 0.3s;
+    &:hover{
+        opacity: 0.7;
+    }
+  }
