@@ -1,3 +1,27 @@
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1em;
+    margin: 0;
+  }
+  p {
+    font-size: 1em;
+  }
+  .containersecciones h2 {
+    font-size: 1em;
+    margin-top: 2em;
+  }
+  .containersecciones p {
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+  .lista2024 li {
+    font-size: 1em;
+    margin: 0;
+  }
+}
 .logo {
   width: 60px;
   height: 60px;
@@ -17,12 +41,12 @@ body {
 
 h2 {
   text-align: center;
-  margin: 70;
-  padding: 10;
+  margin: 1em;
+  padding: 1em;
 }
 
 p {
-  padding: 20px;
+  padding: 2em;
   text-align: center;
   font-size: larger;
 }
@@ -33,7 +57,7 @@ main img {
 }
 
 h1 {
-  margin: 70px;
+  margin: 1em;
   padding: 0px;
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +66,7 @@ h1 {
 }
 
 .navbar .container-fluid {
-  padding: 10px;
+  padding: 1em;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 15px 15px 35px rgba(109, 6, 6, 0.1);
   position: fixed;
@@ -67,7 +91,7 @@ h1 {
   margin-left: auto;
 }
 .container-fluid .navbar-nav .nav-item {
-  margin-right: 70px;
+  margin-right: 7em;
 }
 .container-fluid .navbar-nav .nav-item .nav-link {
   text-decoration: none;
@@ -86,6 +110,17 @@ h1 {
   text-align: center;
 }
 
+.mapa {
+  padding: 0;
+  text-align: center;
+}
+.mapa iframe {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
 .contenedorimagenes {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +132,7 @@ h1 {
 .imagenesexclusivas {
   display: flex;
   flex-wrap: wrap;
-  width: 1650px;
+  width: 900px;
   height: 60vmin;
   gap: 5px;
 }
@@ -117,29 +152,25 @@ h1 {
 }
 
 .parrafo-inicial {
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .containersecciones p {
-  font-size: 30px;
+  font-size: 3em;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 .containersecciones h2 {
   color: red;
 }
 .containersecciones img {
-  padding: 10px;
-}
-.containersecciones .mapa {
-  padding: 10px;
-  text-align: center;
+  padding: 1em;
 }
 
 .piedepagina {
   display: grid;
   background-color: black;
-  padding: 10px;
+  padding: 1em;
   text-align: center;
 }
 
@@ -154,11 +185,11 @@ h1 {
   align-items: center;
 }
 .redessociales a {
-  margin: 10px;
+  margin: 1em;
   display: inline-block;
 }
 .redessociales img {
-  height: 40px;
+  height: 4em;
 }
 
 .lista-pequena {

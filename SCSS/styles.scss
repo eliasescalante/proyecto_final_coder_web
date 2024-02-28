@@ -7,6 +7,40 @@ $color-fuente: black;
     height: $height;
 }
 
+@media only screen and (max-width: 500px){
+
+    h1{
+        font-size: 1em;
+    }
+
+    h2{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .containersecciones h2 {
+        font-size: 1em; 
+        margin-top: 2em; 
+    }
+
+    .containersecciones p {
+        font-size: 1em; 
+        margin-bottom: 2em;
+    }
+
+    .lista2024{
+        li{
+            font-size: 1em;
+            margin: 0;
+        }
+    }
+
+}
+
 // Estilos para el logo
 .logo {
     @include sizes(60px, 60px);
@@ -30,12 +64,12 @@ body {
 
 h2 {
     text-align: center;
-    margin: 70;
-    padding: 10;
+    margin: 1em;
+    padding: 1em;
 }
 
 p {
-    padding: 20px;
+    padding: 2em;
     text-align: center;
     font-size: larger;
 }
@@ -46,7 +80,7 @@ main img {
 
 
 h1 {
-    margin: 70px;
+    margin: 1em;
     padding: 0px;
     text-align: center;
     text-transform: uppercase;
@@ -59,7 +93,7 @@ h1 {
 
 // Estilos para la barra de navegación
 .navbar .container-fluid {
-    padding: 10px;
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.8); // Negro con un 50% de opacidad
     box-shadow: 15px 15px 35px rgba(109, 6, 6, 0.1);
     position: fixed;
@@ -88,7 +122,7 @@ h1 {
 
         // Estilos para cada elemento de la lista de enlaces
         .nav-item {
-            margin-right: 70px;
+            margin-right: 7em;
 
             // Estilos para cada enlace dentro de la lista
             .nav-link {
@@ -115,6 +149,19 @@ h1 {
     text-align: center;
 }
 
+.mapa {
+    padding: 0;
+    text-align: center;
+
+    // Establece el estilo del iframe del mapa para que ocupe todo el espacio disponible en el contenedor
+    iframe {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
 
 // estilo para el contenedor de imagenes
 .contenedorimagenes {
@@ -128,7 +175,7 @@ h1 {
 .imagenesexclusivas {
     display: flex;
     flex-wrap: wrap;
-    @include sizes(1650px, 60vmin);
+    @include sizes(900px, 60vmin);
     gap: 5px;
 
     img {
@@ -149,25 +196,21 @@ h1 {
 }
 
 .parrafo-inicial {
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .containersecciones {
     p {
         // Estilos específicos para las etiquetas p dentro de .containersecciones
-        font-size: 30px;
+        font-size: 3em;
         color: #333; // Por ejemplo, color de texto negro
-        margin-bottom: 10px; // Por ejemplo, agregar un margen inferior
+        margin-bottom: 1em; // Por ejemplo, agregar un margen inferior
     }
     h2 {
         color: red;
     }
     img {
-        padding: 10px;
-    }
-    .mapa {
-        padding: 10px;
-        text-align: center;
+        padding: 1em;
     }
 }
 
@@ -176,7 +219,7 @@ h1 {
 .piedepagina {
     display: grid;
     background-color: black;
-    padding: 10px;
+    padding: 1em;
     text-align: center;
 }
 
@@ -194,12 +237,12 @@ h1 {
 
     // Estilos para cada icono de red social
     a {
-        margin:  10px;
+        margin:  1em;
         display: inline-block;
     }
 
     img {
-        height: 40px;
+        height: 4em;
     }
 }
 
