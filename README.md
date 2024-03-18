@@ -3,3 +3,5 @@
 
 -----
 "Página estática: se utilizó SEO. Se escribió el código CSS con el preprocesador SASS para dar más orden y legibilidad al código."
+
+![Texto alternativo]()
